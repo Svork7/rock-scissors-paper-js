@@ -32,8 +32,8 @@ body {
 .game {
   border: 3px solid #fff;
   width: 100%;
-  max-width: 700px;
-  padding: 50px;
+  max-width: 900px;
+  padding: 20px;
   border-radius: 3px;
 }
 
@@ -141,15 +141,28 @@ body {
 }
 
 .rock {
-  background: url(../img/rock.png) center no-repeat;
+  background: url(../img/rock1.png) center no-repeat;
+  background-size: 40px;
 }
 
 .scissors {
-  background: url(../img/scissors.png) center no-repeat;
+  background: url(../img/scissors1.png) center no-repeat;
+  background-size: 40px;
 }
 
 .paper {
-  background: url(../img/paper.png) center no-repeat;
+  background: url(../img/paper1.png) center no-repeat;
+  background-size: 40px;
+}
+
+.spock {
+  background: url(../img/spock.png) center no-repeat;
+  background-size: 40px;
+}
+
+.lizard {
+  background: url(../img/lizard.png) center no-repeat;
+  background-size: 40px;
 }
 
 .comp-field.blink .rock {
@@ -163,6 +176,16 @@ body {
 }
 
 .comp-field.blink .paper {
+  -webkit-animation: blink 0.3s 0.2s linear infinite;
+          animation: blink 0.3s 0.2s linear infinite;
+}
+
+.comp-field.blink .spock {
+  -webkit-animation: blink 0.3s 0.2s linear infinite;
+          animation: blink 0.3s 0.2s linear infinite;
+}
+
+.comp-field.blink .lizard {
   -webkit-animation: blink 0.3s 0.2s linear infinite;
           animation: blink 0.3s 0.2s linear infinite;
 }

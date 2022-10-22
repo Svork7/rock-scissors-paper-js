@@ -19,8 +19,8 @@ body {
 .game {
   border: 3px solid #fff;
   width: 100%;
-  max-width: 700px;
-  padding: 50px;
+  max-width: 900px;
+  padding: 20px;
   border-radius: 3px;
 }
 .game h1 {
@@ -73,6 +73,7 @@ body {
   width: 50%;
   display: flex;
 }
+
 .field {
   width: 70px;
   height: 70px;
@@ -98,14 +99,28 @@ body {
   justify-content: flex-end;
 }
 .rock {
-  background: url(../img/rock.png) center no-repeat;
+  background: url(../img/rock1.png) center no-repeat;
+  background-size: 40px;
 }
 .scissors {
-  background: url(../img/scissors.png) center no-repeat;
+  background: url(../img/scissors1.png) center no-repeat;
+  background-size: 40px;
 }
 .paper {
-  background: url(../img/paper.png) center no-repeat;
+  background: url(../img/paper1.png) center no-repeat;
+  background-size: 40px;
 }
+
+.spock {
+  background: url(../img/spock.png) center no-repeat;
+  background-size: 40px;
+}
+
+.lizard {
+  background: url(../img/lizard.png) center no-repeat;
+  background-size: 40px;
+}
+
 .comp-field.blink .rock {
   animation: blink 0.3s linear infinite;
 }
@@ -113,6 +128,13 @@ body {
   animation: blink 0.3s 0.1s linear infinite;
 }
 .comp-field.blink .paper {
+  animation: blink 0.3s 0.2s linear infinite;
+}
+
+.comp-field.blink .spock {
+  animation: blink 0.3s 0.2s linear infinite;
+}
+.comp-field.blink .lizard {
   animation: blink 0.3s 0.2s linear infinite;
 }
 .comp-field.blink {

@@ -44,6 +44,8 @@ window.addEventListener('load', function () {
       case 'rr':
       case 'ss':
       case 'pp':
+      case 'cc':
+      case 'll':
         res.innerText = 'Ничья!'
         sound.setAttribute('src', 'audio/draw.mp3')
         sound.play()
@@ -52,6 +54,13 @@ window.addEventListener('load', function () {
       case 'rs':
       case 'sp':
       case 'pr':
+      case 'pc':
+      case 'lc':
+      case 'lp':
+      case 'sl':
+      case 'rl':
+      case 'cr':
+      case 'cs':
         res.innerText = 'Вы победили!'
         sound.setAttribute('src', 'audio/win.mp3')
         sound.play()
@@ -65,6 +74,13 @@ window.addEventListener('load', function () {
       case 'sr':
       case 'ps':
       case 'rp':
+      case 'cp':
+      case 'cl':
+      case 'pl':
+      case 'ls':
+      case 'lr':
+      case 'rc':
+      case 'sc':
         res.innerText = 'Вы проиграли!'
         sound.setAttribute('src', 'audio/loss.mp3')
         sound.play()
