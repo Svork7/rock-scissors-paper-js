@@ -28,9 +28,9 @@ body {
   text-align: center;
 }
 .counter-block {
-  width: 200px;
+  width: 150px;
   border: 2px solid #000;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 10px;
   display: flex;
   justify-content: space-around;
@@ -47,7 +47,7 @@ body {
 .count::before {
   content: '';
   display: block;
-  padding: 3px 8px;
+  padding: 3px 3px;
   background: #5e224f;
   color: #fff;
   font-size: 14px;
@@ -66,7 +66,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
+  padding: 10px 20px;
 }
 .user-field,
 .comp-field {
@@ -220,6 +220,24 @@ body {
     text-align: center;
   }
   .game h1 {
+    padding-top: 5px;
     font-size: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .counter-block {
+    font-size: 34px;
+  }
+
+  .count {
+    position: relative;
+    width: 50px;
+    text-align: center;
+  }
+  .count::before {
+    top: 40px;
   }
 }
