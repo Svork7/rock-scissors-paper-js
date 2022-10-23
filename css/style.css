@@ -282,14 +282,14 @@ body {
   }
 
   .user-field {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .user-field::before {
     content: "Игрок:";
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -297,11 +297,19 @@ body {
     content: "Компьютер:";
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
   .game h1 {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .rock,
+.scissors,
+.paper,
+.spock,
+.lizard {
+    background-size: 25px;
   }
 }
