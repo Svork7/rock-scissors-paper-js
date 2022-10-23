@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  background: #1e88e5;
+  background: #5e224f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@ body {
   content: '';
   display: block;
   padding: 3px 8px;
-  background: #1e88e5;
+  background: #5e224f;
   color: #fff;
   font-size: 14px;
   position: absolute;
@@ -72,6 +72,23 @@ body {
 .comp-field {
   width: 50%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-field::before {
+  content: 'Игрок:';
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+.comp-field::before {
+  content: 'Компьютер:';
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
 }
 
 .field {
@@ -95,9 +112,7 @@ body {
 .field.error {
   background-color: red;
 }
-.comp-field {
-  justify-content: flex-end;
-}
+
 .rock {
   background: url(../img/rock1.png) center no-repeat;
   background-size: 40px;

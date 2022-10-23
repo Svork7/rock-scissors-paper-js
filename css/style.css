@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #1e88e5;
+  background: #5e224f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +69,7 @@ body {
   content: "";
   display: block;
   padding: 3px 8px;
-  background: #1e88e5;
+  background: #5e224f;
   color: #fff;
   font-size: 14px;
   position: absolute;
@@ -105,6 +105,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-field::before {
+  content: "Игрок:";
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.comp-field::before {
+  content: "Компьютер:";
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
 }
 
 .field {
@@ -132,12 +153,6 @@ body {
 
 .field.error {
   background-color: red;
-}
-
-.comp-field {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .rock {
